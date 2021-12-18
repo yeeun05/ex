@@ -1,33 +1,15 @@
 @charset "UTF-8";
 
-body {
-    background: #fff;
-
-}
-
-h1 {
+h1{
+    font-size: 32px;
     text-align: center;
-    font-size: 64px;
-    margin: 0;
-    border-top : 5px #555;
-    border-bottom: 5px #555;
 }
 
 ol {
     float: left;
-    width: 200px;
+    width: 20%;
 }
 
-li { padding-top: 20px;
-     padding-bottom: 20px;
-    font-size: 20px;
-}
-
-a {color: #f00;}
-
-div {
+div{
     float: left;
-    width: 800px;
-    border: left 5px #000;
-    padding-left: 50px;
-}
+    width: 60%;}
