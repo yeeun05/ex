@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양식(form)</title>
+</head>
+<body>
+    <h1>양식(form)</h1>
+    <h2>로그인</h2>
+    <form>
+        <label for="ID">ID</label>
+        <input type="text" id="ID">
+        <br>
+        <label for="PASS">PASS</label>
+        <input type="password" id="PASS"> 
+        <br>
+        <input type="checkbox" id="로그인상태">
+        <label for="로그인상태">로그인상태</label>
+        <label for="유지">유지</label>
+        <br>
+        <input type="submit" value="로그인"> 
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>
+
+<!-- 사전지식
+[form 태그]
+form 태그는 사용자로부터 입력을 받을 수 있는 입력 폼을 정의할 때 사용
+label 태그의 for속성값은 결합하고자 하는 input태그의 id 속성값과 같아야 함
+input 태그는 type속성값에 따라 다양하게 정의할 수 있음
+
+ex) <input type="text"> //텍스트로 입력
+     <input type="password"> //패스워드 형식으로 입력
+     <input type="checkbox"> //체크박스 형식으로 입력
+     <input type="radio"> //라디오버튼 형식으로 입력
+     <input type="submit" value="제출"> //입력했던 값들 제출 버튼
+     <input type="reset" value="초기화"> //입력했던 값들 초기화 버튼
+    -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 이미지(Responsive Image)</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>반응형 이미지(Responsive Image)</h1>
+    <figure>
+        <figcaption>커피</figcaption>
+        <picture>
+            <source media="(min-width:1000px)" srcset="../images/coffee4.jpg">
+            <img src="./images/coffee.gif" alt="커피gif">
+            <source media="(min-width:800px)" srcset="../images/coffee3.png">
+            <img src="./images/coffee.gif" alt="커피gif">
+            <source media="(min-width:600px)" srcset="../images/coffee2.svg">
+            <img src="./images/coffee.gif" alt="커피gif">
+        </picture>
+    </figure>
+</body>
+</html>
+
+    <!-- 사전지식
+[반응형 맛보기]
+figure태그는 문서의 주요 흐름과는 독립적인 콘텐츠를 정의할 때 사용
+figurecaption 태그는 설명을 붙일 수 있음
+picture 태그는 이미지를 한번에 여러개 사용하는 컨테이너를 정의할 때 사용
+
+media 속성은 브라우저의 크기에 따른 조건을 정의할 수 있음
+ex) <picture>
+	<source media="(min-width:1200px)" srcset="./images/drink.jpg">  //가로 1200px까지는 drink.jpg를 보여줘라
+	<img src="./images/beer.png" alt="내가먹을거"> //media 설정 이외의 디폴트로는 beer.png를 보여줘라
+     </picture> -->
+</body>
+</html>
